@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+
+/* TODO decide on font */
+
+body,
+body * {
+  color: #424242 !important;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Muli', sans-serif;
+}
+
+p {
+  line-height: 2rem;
+}
+
+blockquote {
+  border-left: 5px solid #00c853;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 993px) {
+  nav {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+  }
+
+  #sally {
+    margin-top: 64px;
+    height: calc(100vh - 64px);
+    min-height: 480px;
+  }
+
+}
+
+.sally-image,
+.sally-image-small {
+  /* Mike Hodgson 2018 */
+  background-image: url("../img/sally.jpg");
+  background-size: cover;
+}
+
+.sally-image-small {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: 5% 12%;
+}
+
+@media only screen and (min-width: 993px) {
+  .sally-image {
+    display: block;
+    position: absolute;
+    height: calc(100vh - 64px) !important;
+    width:50%;
+    min-height: 480px !important;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: 16% 20%;
+  }
+}
+
+.intro .title,
+.intro blockquote {
+  width: 265px;
+}
+.intro p {
+  font-size: 1.2rem;
+}
+
+#about {
+  height: 500px;
+}
+
+@media only screen and (min-width: 993px) {
+  #about {
+    height: 800px;
+  }
+}
+
+#offer {
+  /* https://pixabay.com/en/plant-succulent-potted-white-space-2004483/ */
+  background-image: url("../img/plant.jpg");
+  background-size: cover;
+  background-repeat:  no-repeat;
+  background-position: 50%;
+}
+
+@media only screen and (min-width: 993px) {
+  #offer {
+    padding-top: 32px;
+  }
+}
+
+#dancer {
+  height: 500px;
+  /* https://pixabay.com/en/ballet-ballet-shoes-ballerina-dance-2042851/ */
+  background-image: url("../img/ballet.jpg");
+  background-size: cover;
+  background-repeat:  no-repeat;
+  background-position: 70% 50%;
+}
+
+@media only screen and (min-width: 993px) {
+  #dancer {
+    height: 800px;
+    background-position: 0% 80%;
+  }
+}
+
+.parallax-container-no-js {
+  /* https://pixabay.com/en/ivy-plant-garden-nature-green-3519431/ */
+  background-image: url("../img/ivy.jpg");
+  background-size: cover;
+  background-repeat:  no-repeat;
+  background-position: 70% 50%;
+}
