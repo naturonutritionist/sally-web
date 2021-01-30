@@ -96,6 +96,29 @@ blockquote {
   font-size: 1.2rem;
 }
 
+#ebook {
+  background-color: #165016;
+}
+
+#ebook .container {
+  padding: 60px 0;
+}
+
+/* Override ActiveCampaign form */
+#ebook form * {
+  color: #ffffff !important;
+  font-family: "Muli", sans-serif;
+  font-weight: 300 !important;
+}
+
+#ebook form input {
+  background-color: #ffffff !important;
+}
+
+#ebook form input::placeholder {
+  color: rgb(117, 117, 117);
+}
+
 @media only screen and (min-width: 993px) {
   #interest {
     height: 800px;
